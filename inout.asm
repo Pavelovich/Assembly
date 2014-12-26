@@ -1,3 +1,5 @@
+; nasm -f elf -o inout.o inout.asm
+; ld -o inout inout.o
 section .data
 	usrPrompt: db "Please enter a number: "
 	lenUsrPrompt equ $-usrPrompt
