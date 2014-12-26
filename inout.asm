@@ -42,7 +42,7 @@ section .text
 		mov edx,5
 		int 80h
 
-		mov eax, num;DWORD [number]	;Adding a condition: Is the number greater than 10?
+		mov eax,num ;DWORD [number]	;Adding a condition: Is the number greater than 10?
 		cmp eax,10
 		jg .numIsGreaterTen
 		jmp .done				;Used to make the program skip to the .done section and skip the greater than 10 condition if false
